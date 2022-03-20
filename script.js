@@ -272,11 +272,11 @@ const Contact = props => {
     React.createElement("p", { className: "separator" }), /*#__PURE__*/
     React.createElement("p", { className: "subtitle" }, "Please, use the form below or send an email to ",
     '', /*#__PURE__*/
-    React.createElement("span", { className: "mail" }, "help", /*#__PURE__*/
+    React.createElement("span", { className: "mail" }, "help.straight.code", /*#__PURE__*/
 
-    React.createElement("i", { className: "fas fa-at at" }), ".straight.code", /*#__PURE__*/
+    React.createElement("i", { className: "fas fa-at at" }), "gmail", /*#__PURE__*/
 
-    React.createElement("i", { className: "fas fa-circle dot" }), "@gmail.com"), ":")), /*#__PURE__*/
+    React.createElement("i", { className: "fas fa-circle dot" }), "com"), ":")), /*#__PURE__*/
 
 
 
