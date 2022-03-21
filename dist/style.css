@@ -973,7 +973,7 @@ a:active {
   color: #252934;
   overflow: hidden;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 25px;
   border: 1px solid #fafafa;
   box-shadow: 0 20px 10px -10px #25293450;
   transition: 300ms;
