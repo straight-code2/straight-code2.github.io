@@ -28,3 +28,4 @@ config.element = 'area-chart';
 Morris.Area(config);
 config.element = 'line-chart';
 Morris.Line(config);
+

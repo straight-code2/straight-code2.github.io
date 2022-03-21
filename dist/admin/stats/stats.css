@@ -5,3 +5,65 @@
 #pie-chart{
   min-height: 250px;
 }
+.spacer {
+  width: max-content;
+  height: 250px;
+  border: 5px soild #ecebeb;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  position: fixed;
+  margin-top: 75px;
+  margin-left: 50px;
+  color: var(--main-color);
+  padding: 10px;
+}
+.grid-item {
+  color: var(--main-color);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.text-container {
+  width: 450px;
+  border: 5px solid #d8d2d2;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 20%;
+  margin-left: 10px;
+  color: var(--main-color);
+}
+.text-container1 {
+  width: 450px;
+  border: 5px solid #d8d2d2;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 20%;
+  margin-left: 10px;
+  color: var(--main-color);
+}
+.text-container2 {
+  width: 450px;
+  border: 5px solid #d8d2d2;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 20%;
+  margin-left: 10px;
+  color: var(--main-color);
+}
+.title {
+  color: var(--main-color);
+}
+.sub-title {
+  color: var(--main-color);
+  padding: 10px;
+}
+.spacer1 {
+  padding: 10px;
+  margin: 10px;
+  margin-left: 25px;
+}
