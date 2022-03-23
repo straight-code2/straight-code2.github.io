@@ -36,9 +36,11 @@
         </svg>
       </button>
       <button class="add-btn" title="Add New Project">
+        <a class="add-btn" href="./add-project/index.html">
         <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
           <line x1="12" y1="5" x2="12" y2="19" />
           <line x1="5" y1="12" x2="19" y2="12" /></svg>
+          </a>
       </button>
       <button class="profile-btn">
         <img src="https://straight-code.github.io/assets/straight-code.png" />
@@ -93,7 +95,22 @@
         <div class="projects-status">
         </div>
         <div class="view-actions">
-   
+          <button class="view-btn list-view" title="List View">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list">
+              <line x1="8" y1="6" x2="21" y2="6" />
+              <line x1="8" y1="12" x2="21" y2="12" />
+              <line x1="8" y1="18" x2="21" y2="18" />
+              <line x1="3" y1="6" x2="3.01" y2="6" />
+              <line x1="3" y1="12" x2="3.01" y2="12" />
+              <line x1="3" y1="18" x2="3.01" y2="18" /></svg>
+          </button>
+          <button class="view-btn grid-view active" title="Grid View">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid">
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" /></svg>
+          </button>
         </div>
       </div>
       <div class"row">
@@ -114,31 +131,128 @@
         <br/>
         <br/>
         <br/>
-        <div class="grid">
-          <div class="grid-item">
-        <div class="text-container"> 
-        <p class="sub-title">
-            These are some of my Projects i have completed over the years...
-          </p>
+       <div class="spacer"></div>
+        <div class="project-boxes jsGridView">
+          <div class="project-box-wrapper">
+            <div class="project-box" style="background-color: #e1ffd5;">
+              <div class="project-box-header">
+                <span></span>
+                <div class="more-wrapper">
+                  <button class="project-btn-more">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                      <circle cx="12" cy="12" r="1" />
+                      <circle cx="12" cy="5" r="1" />
+                      <circle cx="12" cy="19" r="1" /></svg>
+                  </button>
+            </div>
+          </div>
+          <div class="project-box-content-header">
+            <p class="box-content-header"></p>
+            <p class="box-content-subheader"><em></em></p>
+          </div>
+          <div class="box-progress-wrapper">
+            <p class="box-progress-header">Progress</p>
+            <div class="box-progress-bar">
+              <span class="box-progress" style="width: 98%; background-color: #4ff940"></span>
+            </div>
+            <p class="box-progress-percentage">98%</p>
+          </div>
+          <div class="project-box-footer">
+            <div class="participants">
+              <img src="https://straight-code.github.io/assets/straight-code.png" alt="participant">
+              <button class="add-participant" style="color: #4067f9;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+              </button>
+            </div>
+            <div class="days-left" style="color: #4067f9;">
+              20 Days Left
+            </div>
           </div>
         </div>
-        <div class="grid-item">
-        <div class="text-container1">
-          <h2 class="title">straight-code</h2>
-          <p class="sub-title">
-            This will be more info about the data
-          </p>
+      </div>
+
+      <div class="project-box-wrapper">
+        <div class="project-box" style="background-color: #e1ffd5;">
+          <div class="project-box-header">
+            <span></span>
+            <div class="more-wrapper">
+              <button class="project-btn-more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                  <circle cx="12" cy="12" r="1" />
+                  <circle cx="12" cy="5" r="1" />
+                  <circle cx="12" cy="19" r="1" /></svg>
+              </button>
         </div>
+      </div>
+      <div class="project-box-content-header">
+        <p class="box-content-header"></p>
+        <p class="box-content-subheader"><em></em></p>
+      </div>
+      <div class="box-progress-wrapper">
+        <p class="box-progress-header">Progress</p>
+        <div class="box-progress-bar">
+          <span class="box-progress" style="width: 70%; background-color: #4ff940"></span>
         </div>
-       <div class="grid-item">
-        <div class="text-container2">
-          <h2 class="title">straight-code<strong>2</strong></h2>
-       <p class="sub-title">
-         i have some big plans for straight-code2 over the upcoming years...
-       </p>
-          </div>
+        <p class="box-progress-percentage">70%</p>
+      </div>
+      <div class="project-box-footer">
+        <div class="participants">
+          <img src="https://straight-code.github.io/assets/straight-code.png" alt="participant">
+          <button class="add-participant" style="color: #4067f9;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </button>
         </div>
-     </div>
+        <div class="days-left" style="color: #4067f9;">
+          20 Days Left
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-box-wrapper">
+    <div class="project-box" style="background-color: #e1ffd5;">
+      <div class="project-box-header">
+        <span></span>
+        <div class="more-wrapper">
+          <button class="project-btn-more">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+              <circle cx="12" cy="12" r="1" />
+              <circle cx="12" cy="5" r="1" />
+              <circle cx="12" cy="19" r="1" /></svg>
+          </button>
+    </div>
+  </div>
+  <div class="project-box-content-header">
+    <p class="box-content-header"></p>
+    <p class="box-content-subheader"><em></em></p>
+  </div>
+  <div class="box-progress-wrapper">
+    <p class="box-progress-header">Progress</p>
+    <div class="box-progress-bar">
+      <span class="box-progress" style="width: 80%; background-color: #4ff940"></span>
+    </div>
+    <p class="box-progress-percentage">80%</p>
+  </div>
+  <div class="project-box-footer">
+    <div class="participants">
+      <img src="https://straight-code.github.io/assets/straight-code.png" alt="participant">
+      <button class="add-participant" style="color: #4067f9;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+          <path d="M12 5v14M5 12h14" />
+        </svg>
+      </button>
+    </div>
+    <div class="days-left" style="color: #4067f9;">
+      20 Days Left
+    </div>
+  </div>
+</div>
+</div>
+
     </div>
    </div>
   </div>

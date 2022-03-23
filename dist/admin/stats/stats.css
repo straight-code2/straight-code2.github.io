@@ -6,8 +6,10 @@
   min-height: 250px;
 }
 .spacer {
-  width: max-content;
-  height: 250px;
+  width: 500px;
+  height: 140px;
+  padding: 10px;
+  margin: 10px;
   border: 5px soild #ecebeb;
 }
 .grid {
