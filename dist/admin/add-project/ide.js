@@ -144,7 +144,7 @@ EditorFiles.prototype.attach = function() {
   
   this.active = -1;
   this.setActive(0);
-  //this.focus();
+  this.focus();
   
   this.ui.menu.addEventListener('click', this.toggleMenu.bind(this));
   this.ui.menu.addEventListener('mouseover', this.preShowMenu.bind(this));
