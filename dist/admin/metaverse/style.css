@@ -88,7 +88,7 @@ body {
 
 /* Joysticks */
 .joystick {
-  background: rgba(100, 100, 100, 0.5);
+  background: rgba(21, 255, 0, 0.582);
   border: 3px solid #646464;
   border-radius: 50%;
   height: 80px;
@@ -110,7 +110,7 @@ body {
   transform: translateX(-50%);
 }
 .joystick .thumb {
-  background-color: #fff;
+  background-color: rgb(34, 252, 6);
   border-radius: 50%;
   height: 40px;
   left: 17px;
