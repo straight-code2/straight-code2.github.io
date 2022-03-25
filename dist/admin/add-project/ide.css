@@ -21,7 +21,7 @@
     -moz-transform: rotate(2deg);
   }
   50% {
-    -moz-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg); 
   }
   100% {
     -moz-transform: rotate(0deg);
