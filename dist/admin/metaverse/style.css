@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
+:root {
+  --button-spacing: 5px;
+  --button-width: 32px;
+}
+
+* {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#loading {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  font-family: Orbitron;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+/**
+ * Spinner
+ */
+.spinner {
+  position: relative;
+  width: 125px;
+  height: 125px;
+}
+.spinner:before, .spinner:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 50%;
+}
+@keyframes scale-2 {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.7);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.spinner:before {
+  width: 117px;
+  height: 117px;
+  border-color: #cccccc;
+  top: 0px;
+  left: 0px;
+  animation: scale-2 1s linear 0s infinite;
+}
+.spinner:after {
+  width: 117px;
+  height: 117px;
+  border-color: #cccccc;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: scale-2 1s linear 0.5s infinite;
+}
+
+/* Joysticks */
+.joystick {
+  background: rgba(100, 100, 100, 0.5);
+  border: 3px solid #646464;
+  border-radius: 50%;
+  height: 80px;
+  position: absolute;
+  width: 80px;
+  z-index: 1;
+}
+.joystick.left {
+  bottom: 35px;
+  left: 35px;
+}
+.joystick.right {
+  bottom: 35px;
+  right: 35px;
+}
+.joystick.center {
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.joystick .thumb {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 40px;
+  left: 17px;
+  position: absolute;
+  top: 17px;
+  width: 40px;
+  z-index: 2;
+}
+.joystick .threshold {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  height: 150px;
+  left: -55px;
+  margin: auto;
+  position: absolute;
+  top: -55px;
+  width: 150px;
+  z-index: 1;
+}
+
+/* Overlay */
+#product-overlay {
+  background-color: #eee;
+  border: 1px solid #555;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 40px);
+  align-items: center;
+  left: 0;
+  margin: auto;
+  max-width: 400px;
+  min-width: 320px;
+  overflow: scroll;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc(100vw - 40px);
+  z-index: 5;
+}
+#product-overlay > div {
+  padding: 20px;
+}
+#product-overlay h2 {
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+#product-overlay .images {
+  border: 2px solid #333;
+  margin: 0 auto;
+  max-height: 325px;
+  max-width: 600px;
+  overflow: hidden;
+}
+#product-overlay .images img {
+  display: block;
+  max-width: 100%;
+}
+#product-overlay .description {
+  margin-top: 20px;
+}
+#product-overlay .close-button {
+  float: none;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+#product-overlay .size {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 40px;
+}
+#product-overlay .buttons {
+  display: flex;
+  margin: auto;
+  bottom: 20px;
+  position: absolute;
+  right: 20px;
+}
+#product-overlay .cancel-button {
+  bottom: 23px;
+  position: absolute;
+}
+#product-overlay .social {
+  justify-content: center;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
