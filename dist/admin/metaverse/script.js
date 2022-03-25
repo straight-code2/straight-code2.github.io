@@ -904,12 +904,211 @@ const productData = [
   scene: {
     assetUri: 'coat.glb',
     path: 'https://straight-code.github.io/assets/',
-    position: [-5, 0, 0],
+    position: [-20, 0, 0],
     quaternion: null,
     rotation: [0, 0, 0],
-    scale: 8 } },
+    scale: 7 } },
+    {
+      id: 'lamb-leather-jacket',
+      product: {
+        description: 'support straight-code and the team by owning some straight-code merch.',
+        images: [
+        './assets/jumper1of1.png'],
+    
+        sizes: [
+        { name: 'xs', price: 35 },
+        { name: 'sm', price: 35 },
+        { name: 'md', price: 35 },
+        { name: 'lg', price: 35 },
+        { name: 'xl', price: 35 },
+        { name: 'xxl', price: 35 }],
+    
+        title: 'straight-code 1of1 Jumper' },
+    
+      scene: {
+        assetUri: 'coat.glb',
+        path: 'https://straight-code.github.io/assets/',
+        position: [-20, 0, -10],
+        quaternion: null,
+        rotation: [0, 0, 0],
+        scale: 7 } },
 
+    {
+      id: 'mystery-box',
+      product: {
+        description: 'support straight-code and the team by owning some straight-code merch.',
+        images: [
+        './assets/box.png'],
+    
+        sizes: [
+        { name: 'xs', price: 100 },
+        { name: 'sm', price: 250 },
+        { name: 'md', price: 500 },
+        { name: 'lg', price: 1000 },
+        { name: 'xl', price: 2500 },
+        { name: 'xxl', price: 5000 }],
+    
+        title: 'straight-code 1of1 Jumper' },
+    
+      scene: {
+        assetUri: 'box.glb',
+        path: 'https://straight-code.github.io/assets/',
+        position: [-20, 0, 5],
+        quaternion: null,
+        rotation: [0, 0, 0],
+        scale: 5 } },
 
+        {
+          id: 'mystery-box',
+          product: {
+            description: 'support straight-code and the team by owning some straight-code merch.',
+            images: [
+            './assets/box.png'],
+        
+            sizes: [
+            { name: 'xs', price: 100 },
+            { name: 'sm', price: 250 },
+            { name: 'md', price: 500 },
+            { name: 'lg', price: 1000 },
+            { name: 'xl', price: 2500 },
+            { name: 'xxl', price: 5000 }],
+        
+            title: 'straight-code 1of1 Jumper' },
+        
+          scene: {
+            assetUri: 'box.glb',
+            path: 'https://straight-code.github.io/assets/',
+            position: [-20, 0, 10],
+            quaternion: null,
+            rotation: [0, 0, 0],
+            scale: 5 } },
+
+            {
+              id: 'green-bay-jacket',
+              product: {
+                description: 'straight-code hoodie ',
+                images: [
+                'https://straight-code.github.io/assets/hoodie.png'],
+            
+                sizes: [
+                { name: 'xs', price: 45.00 },
+                { name: 'sm', price: 45.00 },
+                { name: 'md', price: 45.00 },
+                { name: 'lg', price: 45.00 },
+                { name: 'xl', price: 45.00 },
+                { name: 'xxl', price: 45.00 }],
+            
+                title: 'straight-code hoodie' },
+            
+              scene: {
+                assetUri: 'coat.glb',
+                path: 'https://straight-code.github.io/assets/',
+                position: [-20, 0, 15],
+                quaternion: null,
+                rotation: [0, 0, 0],
+                scale: 7 } },
+
+                {
+                  id: 'green-bay-jacket',
+                  product: {
+                    description: 'straight-code hoodie ',
+                    images: [
+                    'https://straight-code.github.io/assets/hoodie.png'],
+                
+                    sizes: [
+                    { name: 'xs', price: 45.00 },
+                    { name: 'sm', price: 45.00 },
+                    { name: 'md', price: 45.00 },
+                    { name: 'lg', price: 45.00 },
+                    { name: 'xl', price: 45.00 },
+                    { name: 'xxl', price: 45.00 }],
+                
+                    title: 'straight-code hoodie' },
+                
+                  scene: {
+                    assetUri: 'coat.glb',
+                    path: 'https://straight-code.github.io/assets/',
+                    position: [-20, 0, 20],
+                    quaternion: null,
+                    rotation: [0, 0, 0],
+                    scale: 7 } },   
+                    
+                    {
+                      id: 'green-bay-jacket',
+                      product: {
+                        description: 'straight-code hoodie ',
+                        images: [
+                        'https://straight-code.github.io/assets/hoodie.png'],
+                    
+                        sizes: [
+                        { name: 'xs', price: 45.00 },
+                        { name: 'sm', price: 45.00 },
+                        { name: 'md', price: 45.00 },
+                        { name: 'lg', price: 45.00 },
+                        { name: 'xl', price: 45.00 },
+                        { name: 'xxl', price: 45.00 }],
+                    
+                        title: 'straight-code hoodie' },
+                    
+                      scene: {
+                        assetUri: 'coat.glb',
+                        path: 'https://straight-code.github.io/assets/',
+                        position: [-20, 0, 25],
+                        quaternion: null,
+                        rotation: [0, 0, 0],
+                        scale: 7 } },
+
+                        {
+                          id: 'green-bay-jacket',
+                          product: {
+                            description: 'straight-code hoodie ',
+                            images: [
+                            'https://straight-code.github.io/assets/hoodie.png'],
+                        
+                            sizes: [
+                            { name: 'xs', price: 45.00 },
+                            { name: 'sm', price: 45.00 },
+                            { name: 'md', price: 45.00 },
+                            { name: 'lg', price: 45.00 },
+                            { name: 'xl', price: 45.00 },
+                            { name: 'xxl', price: 45.00 }],
+                        
+                            title: 'straight-code hoodie' },
+                        
+                          scene: {
+                            assetUri: 'coat.glb',
+                            path: 'https://straight-code.github.io/assets/',
+                            position: [-20, 0, 30],
+                            quaternion: null,
+                            rotation: [0, 0, 0],
+                            scale: 7 } },
+
+                      {
+                        id: 'green-bay-jacket',
+                          product: {
+                           description: 'straight-code hoodie ',
+                             images: [
+                             'https://straight-code.github.io/assets/hoodie.png'],
+                            
+                           sizes: [
+                              { name: 'xs', price: 45.00 },
+                              { name: 'sm', price: 45.00 },
+                              { name: 'md', price: 45.00 },
+                              { name: 'lg', price: 45.00 },
+                              { name: 'xl', price: 45.00 },
+                              { name: 'xxl', price: 45.00 }],
+                            
+                                title: 'straight-code hoodie' },
+                            
+                              scene: {
+                                assetUri: 'coat.glb',
+                                path: 'https://straight-code.github.io/assets/',
+                                position: [-20, 0, 35],
+                                quaternion: null,
+                                rotation: [0, 0, 0],
+                                scale: 7 } },
+
+    
 {
   id: 'green-bay-jacket',
   product: {
@@ -930,10 +1129,10 @@ const productData = [
   scene: {
     assetUri: 'coat.glb',
     path: 'https://straight-code.github.io/assets/',
-    position: [5, 0, 0],
+    position: [-20, 0, -5],
     quaternion: null,
     rotation: [0, 0, 0],
-    scale: 8 } }];
+    scale: 7 } }];
 
 
 
