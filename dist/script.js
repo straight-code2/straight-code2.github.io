@@ -84,13 +84,13 @@ const Header = props => {
     React.createElement("div", { className: "container" }, /*#__PURE__*/
     React.createElement("h1", null, /*#__PURE__*/
     React.createElement("span", { className: "line" }, ""), /*#__PURE__*/
-    React.createElement("span", { className: "line" }, "graphic design"), /*#__PURE__*/
+    React.createElement("span", { className: "line" }, "No Stack "), /*#__PURE__*/
     React.createElement("span", { className: "line" }, /*#__PURE__*/
-    React.createElement("span", { className: "color" }, "&"), " code.")), /*#__PURE__*/
+    React.createElement("span", { className: "color" }, "To"), " Full Stack")), /*#__PURE__*/
 
 
     React.createElement("div", { className: "buttons" }, /*#__PURE__*/
-    React.createElement("a", { href: "#projects" }, "my portfolio"), /*#__PURE__*/
+    React.createElement("a", { href: "#projects" }, "Portfolio"), /*#__PURE__*/
     React.createElement("a", { href: "#contact", className: "cta" }, "get in touch")))));
 
 
@@ -111,7 +111,7 @@ const About = props => {
     React.createElement("div", { className: "wrapper" }, /*#__PURE__*/
     React.createElement("article", null, /*#__PURE__*/
     React.createElement("div", { className: "title" }, /*#__PURE__*/
-    React.createElement("h3", null, "Who's this guy?"), /*#__PURE__*/
+    React.createElement("h3", null, "About me?"), /*#__PURE__*/
     React.createElement("p", { className: "separator" })), /*#__PURE__*/
 
     React.createElement("div", { className: "desc full" }, /*#__PURE__*/
