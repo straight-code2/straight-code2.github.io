@@ -884,8 +884,10 @@ function observe(name, callback) {
 }
 
 const productData = [
-{
-  id: 'lamb-leather-jacket',
+
+// left side start
+  {
+  id: 'mystery-box',
   product: {
     description: 'support straight-code and the team by owning some straight-code merch.',
     images: [
@@ -910,7 +912,7 @@ const productData = [
     scale: 4 } },
 
     {
-      id: 'lamb-leather-jacket',
+      id: 'mystery-box1',
       product: {
         description: 'support straight-code and the team by owning some straight-code merch.',
         images: [
@@ -935,7 +937,7 @@ const productData = [
         scale: 4 } },
     
         {
-          id: 'mystery-box',
+          id: 'mystery-box2',
           product: {
             description: 'support straight-code and the team by owning some straight-code merch.',
             images: [
@@ -961,7 +963,7 @@ const productData = [
     
     
     {
-      id: 'green-bay-jacket',
+      id: 'mystery-box3',
       product: {
         description: 'straight-code hoodie ',
         images: [
@@ -986,7 +988,7 @@ const productData = [
         scale: 4 } },
       
         {
-          id: 'lamb-leather-jacket',
+          id: 'mystery-box4',
           product: {
             description: 'support straight-code and the team by owning some straight-code merch.',
             images: [
@@ -1009,10 +1011,91 @@ const productData = [
             quaternion: null,
             rotation: [0, 0, 0],
             scale: 4 } },
-        
 
+            // left side end
+
+         // front side start
+            {
+              id: 'mystery-box5',
+              product: {
+                description: 'support straight-code and the team by owning some straight-code merch.',
+                images: [
+                './assets/jumper1of1.png'],
+            
+                sizes: [
+                { name: 'xs', price: 35 },
+                { name: 'sm', price: 35 },
+                { name: 'md', price: 35 },
+                { name: 'lg', price: 35 },
+                { name: 'xl', price: 35 },
+                { name: 'xxl', price: 35 }],
+            
+                title: 'straight-code 1of1 Jumper' },
+            
+              scene: {
+                assetUri: 'mystery-box.glb',
+                path: 'https://straight-code.github.io/assets/',
+                position: [-10, 0, -10],
+                quaternion: null,
+                rotation: [0, 0, 0],
+                scale: 4 } },
+            
+                {
+                  id: 'mystery-box6',
+                  product: {
+                    description: 'support straight-code and the team by owning some straight-code merch.',
+                    images: [
+                    './assets/jumper1of1.png'],
+                
+                    sizes: [
+                    { name: 'xs', price: 35 },
+                    { name: 'sm', price: 35 },
+                    { name: 'md', price: 35 },
+                    { name: 'lg', price: 35 },
+                    { name: 'xl', price: 35 },
+                    { name: 'xxl', price: 35 }],
+                
+                    title: 'straight-code 1of1 Jumper' },
+                
+                  scene: {
+                    assetUri: 'mystery-box1.glb',
+                    path: 'https://straight-code.github.io/assets/',
+                    position: [0, 0, -10],
+                    quaternion: null,
+                    rotation: [0, 0, 0],
+                    scale: 4 } },
+                
+                    {
+                      id: 'mystery-box7',
+                      product: {
+                        description: 'support straight-code and the team by owning some straight-code merch.',
+                        images: [
+                        './assets/jumper1of1.png'],
+                    
+                        sizes: [
+                        { name: 'xs', price: 35 },
+                        { name: 'sm', price: 35 },
+                        { name: 'md', price: 35 },
+                        { name: 'lg', price: 35 },
+                        { name: 'xl', price: 35 },
+                        { name: 'xxl', price: 35 }],
+                    
+                        title: 'straight-code 1of1 Jumper' },
+                    
+                      scene: {
+                        assetUri: 'mystery-box.glb',
+                        path: 'https://straight-code.github.io/assets/',
+                        position: [10, 0, -10],
+                        quaternion: null,
+                        rotation: [0, 0, 0],
+                        scale: 4 } },
+                
+                  
+            // front side end 
+
+// right side start
     {
-      id: 'mystery-box',
+      id: 'mystery-box8',
       product: {
         description: 'support straight-code and the team by owning some straight-code merch.',
         images: [
@@ -1038,7 +1121,7 @@ const productData = [
 
 
 {
-  id: 'green-bay-jacket',
+  id: 'mystery-box9',
   product: {
     description: 'straight-code hoodie ',
     images: [
@@ -1063,7 +1146,7 @@ const productData = [
     scale: 4 } },
   
     {
-      id: 'lamb-leather-jacket',
+      id: 'mystery-box10',
       product: {
         description: 'support straight-code and the team by owning some straight-code merch.',
         images: [
@@ -1088,7 +1171,7 @@ const productData = [
         scale: 4 } },
     
         {
-          id: 'mystery-box',
+          id: 'mystery-box11',
           product: {
             description: 'support straight-code and the team by owning some straight-code merch.',
             images: [
@@ -1113,7 +1196,7 @@ const productData = [
             scale: 4 } },
     
     {
-      id: 'green-bay-jacket',
+      id: 'mystery-box12',
       product: {
         description: 'straight-code hoodie ',
         images: [
@@ -1136,6 +1219,8 @@ const productData = [
         quaternion: null,
         rotation: [0, 0, 0],
         scale: 4 } }
+
+        // right side end
   ];
 
 
@@ -1183,11 +1268,9 @@ const ProductDetail = ({ id }) => {
     React.createElement(ButtonGroup, { className: "social" }, /*#__PURE__*/
     React.createElement(Button, { variant: "light" }, /*#__PURE__*/React.createElement("i", { class: "fa-solid fa-hands-clapping" })), /*#__PURE__*/
     React.createElement(Button, { variant: "light" }, /*#__PURE__*/React.createElement("i", { class: "fa-solid fa-bookmark" })), /*#__PURE__*/
-    React.createElement(Button, { variant: "light" }, /*#__PURE__*/React.createElement("i", { class: "fa-brands fa-facebook" })), /*#__PURE__*/
     React.createElement(Button, { variant: "light" }, /*#__PURE__*/React.createElement("i", { class: "fa-brands fa-instagram" })), /*#__PURE__*/
     React.createElement(Button, { variant: "light" }, /*#__PURE__*/React.createElement("i", { class: "fa-brands fa-twitter" })), /*#__PURE__*/
-    React.createElement(Button, { variant: "light" }, /*#__PURE__*/React.createElement("i", { class: "fa-brands fa-pinterest" })), /*#__PURE__*/
-    React.createElement(Button, { variant: "light" }, /*#__PURE__*/React.createElement("i", { class: "fa-solid fa-share-from-square" }))), /*#__PURE__*/
+
 
     React.createElement(Carousel, { className: "images" },
     images.map((image) => /*#__PURE__*/
@@ -1205,13 +1288,11 @@ const ProductDetail = ({ id }) => {
     React.createElement(Dropdown, { as: ButtonGroup },
     SizeButton, /*#__PURE__*/
     React.createElement(Dropdown.Menu, null, sizeOptions), /*#__PURE__*/
-    React.createElement(Button, { variant: "primary", href: "confirm/index.html" }, "Buy"))))));
+    React.createElement(Button, { variant: "primary", href: "confirm/index.html" }, "Buy")))))));
 
 
 
-
-
-};
+    };
 
 // Not an ideal implementation, but React isn't the point of this demo.
 const toggleProductDetail = id => {

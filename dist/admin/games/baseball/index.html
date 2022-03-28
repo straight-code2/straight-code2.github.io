@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Baseball - Home Run </title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://straight-code.github.io/assets/straight-code.png" rel="shortcut icon" />
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- I apologize for the janky gameplay on mobile Safari-->
+<div id='game_console'>
+  <div id='ballpark'>
+    <div id='scoreboard'></div>
+    <div id='pitcher'></div>
+    <div id='batter' class=''></div>
+    <div id='ball' style='left: 43%; top: 58.5%;'></div>
+  </div>
+  <div id='homeruns'>0</div>
+  <div id='outs'>0</div>
+  <div id='start_screen'><span>T</span><span>A</span><span>P</span> <span>T</span><span>O</span> <span>P</span><span>L</span><span>A</span><span>Y</span>
+    <p>Tap to throw pitch<br>Tap again to swing</p>
+  </div>
+</div>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+<audio src="http://contentservice.mc.reyrey.net/audio_v1.0.0/?id=d1f9b7da-033e-5f86-94e6-4500351eb570" id='back_sound' preload loop></audio>
+<audio src="http://contentservice.mc.reyrey.net/audio_v1.0.0/?id=4b11ab1d-fdba-569d-b932-1974bde0671a" id='bat_hit' preload></audio>
+<audio src="http://contentservice.mc.reyrey.net/audio_v1.0.0/?id=b916d76b-e068-55e0-bfae-5833b9c3004f" id='clapping' preload></audio>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

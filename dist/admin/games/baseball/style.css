@@ -1,0 +1,235 @@
+html {
+  background-color: #000;
+}
+body {
+  width: 100%;
+  max-width: 900px;
+  transform: scale(1);
+  filter: drop-shadow(0 0 3px rgba(0,0,0,.5));
+}
+
+#game_console {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  position: relative;
+  background:
+    linear-gradient(to bottom, skyblue, dodgerblue 27%, #99c445 27%);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  perspective: 1000px;
+  border-radius: 5px;
+/*   clip-path: polygon(0% 0%, 100% 0%, 100% 62.5%, 50% 100%, 0% 62.5%); */
+}
+
+.hr_sparkle {
+  background:
+    url('https://contentservice.mc.reyrey.net/image_v1.0.0/?id=bbc72761-46d2-5106-9db6-bccb57cb4ea5&637836660331479528'),
+    linear-gradient(to bottom, skyblue, dodgerblue 27%, #99c445 27%) !important; 
+  background-size: 50% auto, 100% auto !important;
+  background-repeat: repeat-x, repeat !important;
+}
+
+#start_screen {
+  width: 400px;
+  padding: 1rem;
+  font-family: system-ui;
+  border-radius: 2px;
+  background: SeaGreen;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: 900;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 
+    0px 0px 0px 3px white,
+    0 0 25px black;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+#start_screen p {
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 150%;
+}
+#start_screen span {
+  font-family: monospace;
+  font-size: 24px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 1px solid #333;
+  display: inline-block;
+  text-align: center;
+  background: var(--aqua);
+  padding: .25rem .33rem .33rem .33rem;
+  line-height: 80%;
+  box-shadow: inset 0 0 3px rgba(0,0,0,.5);
+  margin: 0 1px;
+  letter-spacing: 0px;
+}
+
+#ballpark {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  transform-origin: 0% 100%;
+  transform: rotateX(60deg) rotateZ(-45deg) scale(1);
+/*   transform: rotateX(55deg) rotate(-45deg) scale(.6) !important; */
+  transition: 1s;
+  perspective: 1000px;
+}
+.alt_bp {
+  /*   bottom: -5% !important; */
+  transform: rotateX(45deg) rotate(-45deg) scale(.35) !important;
+  transform: rotateX(55deg) rotate(-45deg) scale(.6) !important;
+}
+#ballpark:before {
+  content: '';
+  width: 250%;
+  aspect-ratio: 1 / 1;
+  background: 
+    url('https://contentservice.mc.reyrey.net/image_v1.0.0/?id=80c9781b-573d-5617-9370-f09fb73c89b0&637836568593584277');
+  background-size: 100% auto;
+  position: absolute;
+  left: -30%;
+  bottom: -30%;
+  z-index: -1;
+  opacity: 1;
+/*   filter: drop-shadow(-10px 10px 15px rgba(0,0,0,.5)); */
+}
+
+#scoreboard {
+  width: 75%;
+  aspect-ratio: 3 / 2;
+  background: 
+    linear-gradient(to bottom right, #222, #555, #222);
+  box-shadow: inset 0 0 0 10px black;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  transform: translate(70%,-250%) rotateZ(45deg) rotateX(-30deg);
+  font-size: 60px;
+  font-weight: 900;
+  color: white;
+  padding: 0 1rem;
+  display: grid;
+  place-items: center;
+  line-height: 100%;
+  font-family: 'Press Start 2P', system-ui, monospace;
+  letter-spacing: 2px;
+  text-align: center;
+}
+#scoreboard:after {
+  content: '';
+  width: 100%;
+  height: 30%;
+  background: 
+    linear-gradient(to right, transparent 10%, black 10% 25%, transparent 25% 75%, black 75% 90%, transparent 90%);
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+#pitcher {
+  width: 18.75%;
+  aspect-ratio: 1 / 2;
+  background: 
+    url('https://contentservice.mc.reyrey.net/image_v1.0.0/?id=a129d777-3ce0-5a82-9b99-41a9823d908c&637836541923885508');
+  background-size: 100% 100%;
+  position: absolute;
+  left: 39%;
+  top: 60%;
+/*   filter: drop-shadow(0 -5px 5px black); */
+  transform: translate(-50%,-50%) rotateZ(45deg) rotateX(-45deg);
+}
+
+#batter {
+  width: 20%;
+  aspect-ratio: 210 / 250;
+  background: 
+    url('https://contentservice.mc.reyrey.net/image_v1.0.0/?id=85278b76-46c2-5309-a25e-cd9586ddd3bc&637837289806800896');
+  background: 
+    url('https://contentservice.mc.reyrey.net/image_v1.0.0/?id=b542a811-6819-5512-9b59-a9ecdcb4074b&637837290363842389');
+  background-size: 400% 100%;
+  position: absolute;
+  left: -10%;
+  top: 80%;
+  transform: rotateX(-20deg) rotateY(-20deg) rotateZ(45deg);
+}
+
+.swing {
+  animation: swing .15s steps(3) forwards;
+}
+@keyframes swing {
+  100% { background-position: -300% 0; }
+}
+
+#ball {
+  width: 7px;
+  aspect-ratio: 1 / 1;
+  background: 
+    url('https://contentservice.mc.reyrey.net/image_v1.0.0/?id=64e442fa-40c4-52a9-9712-23c3657e381e&637836569923134011');
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  border-radius: 50%;
+  position: absolute;
+  transition-timing-function: linear;
+  transform: rotateX(-25deg);
+  box-shadow: -5px 5px 0 rgba(0,0,0,.15);
+}
+
+.hit_ball {
+  animation: hit_ball 2s ease-out forwards;
+}
+@keyframes hit_ball {
+  0% { 
+    box-shadow: -2px 2px 1px rgba(0,0,0,.15); 
+  }
+  50% { 
+    transform: rotateX(-45deg) scale(4); 
+    box-shadow: -15px 15px 1px rgba(0,0,0,.15);
+  }
+  100% { 
+    background-position: -20px 20px;
+    transform: rotateX(-45deg) scale(1);
+  }
+}
+
+#homeruns,
+#outs {
+  position: absolute;
+  font-size: 24px;
+  padding: 1rem;
+  box-sizing: border-box;
+  bottom: -5px;
+  text-align: center;
+  color: white;
+  user-select: none;
+  font-family: 'Press Start 2P', system-ui, monospace;
+}
+#homeruns:after {
+  content: "HR's";
+  font-size: 12px;
+  font-weight: 100;
+  display: block;
+  font-family: system-ui, monospace;
+}
+
+#outs {
+  right: 0;
+}
+#outs:after {
+  content: 'OUTS';
+  font-size: 12px;
+  font-weight: 100;
+  display: block;
+  font-family: system-ui, monospace;
+}
