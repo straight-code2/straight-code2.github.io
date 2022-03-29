@@ -2,11 +2,11 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>straight-code2 | Stats</title>
+  <title>straight-code2 | More </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="../stats.css">
-<link rel="stylesheet" href="./button.css">
+<link rel="stylesheet" href="./card.css">
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://cdn.oesmith.co.uk/morris-0.5.1.css'><link rel="stylesheet" href="./stats.css">
 <link href="https://straight-code.github.io/assets/straight-code.png" rel="shortcut icon" />
@@ -66,7 +66,7 @@
           <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
           <polyline points="9 22 9 12 15 12 15 22" /></svg>
       </a>
-      <a href="../stats/index.html" class="app-sidebar-link active" >
+      <a href="../stats/index.html" class="app-sidebar-link" >
         <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-pie-chart" viewBox="0 0 24 24">
           <defs />
           <path d="M21.21 15.89A10 10 0 118 2.83M22 12A10 10 0 0012 2v10z" />
@@ -96,7 +96,7 @@
           <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/>
         </svg>
       </a>
-      <a href="../more/index.html" class="app-sidebar-link" style="display: block;padding: 8px;">
+      <a href="../more/index.html" class="app-sidebar-link active" style="display: block;padding: 8px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
           <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
@@ -112,170 +112,260 @@
     </div>
     <div class="projects-section">
       <div class="projects-section-header">
-        <p>Stats</p>
+        <p>More</p>
         <p class="time"></p>
       </div>
       <div class="projects-section-line">
         <div class="projects-status">
         </div>
         <div class="view-actions">
-          <button class="view-btn list-view" title="List View">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list">
-              <line x1="8" y1="6" x2="21" y2="6" />
-              <line x1="8" y1="12" x2="21" y2="12" />
-              <line x1="8" y1="18" x2="21" y2="18" />
-              <line x1="3" y1="6" x2="3.01" y2="6" />
-              <line x1="3" y1="12" x2="3.01" y2="12" />
-              <line x1="3" y1="18" x2="3.01" y2="18" /></svg>
-          </button>
-          <button class="view-btn grid-view active" title="Grid View">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid">
-              <rect x="3" y="3" width="7" height="7" />
-              <rect x="14" y="3" width="7" height="7" />
-              <rect x="14" y="14" width="7" height="7" />
-              <rect x="3" y="14" width="7" height="7" /></svg>
-          </button>
+    
         </div>
       </div>
-      <div class"row">
-        <div class="col-sm-6 text-center">
-          <label class="label label-success">Estimated Yearly Project Progress</label>
-          <div id="area-chart" ></div>
-        </div>
-        <div class="col-sm-6 text-center">
-           <label class="label label-success">Estimated Yearly Project Progress</label>
-          <div id="line-chart"></div>
-        </div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-       <div class="spacer"></div>
-        <div class="project-boxes jsGridView">
+     
+        <div class="project-boxes jsListView">
           <div class="project-box-wrapper">
-            <div class="project-box" style="background-color: #e1ffd5;">
-              <div class="project-box-header">
-                <span></span>
-                <div class="more-wrapper">
-                  <button class="project-btn-more">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
-                      <circle cx="12" cy="12" r="1" />
-                      <circle cx="12" cy="5" r="1" />
-                      <circle cx="12" cy="19" r="1" /></svg>
-                  </button>
-            </div>
-          </div>
-          <div class="project-box-content-header">
-            <p class="box-content-header"></p>
-            <p class="box-content-subheader"><em></em></p>
-          </div>
-          <div class="box-progress-wrapper">
-            <p class="box-progress-header">Progress</p>
-            <div class="box-progress-bar">
-              <span class="box-progress" style="width: 98%; background-color: #4ff940"></span>
-            </div>
-            <p class="box-progress-percentage">98%</p>
-          </div>
-          <div class="project-box-footer">
-            <div class="participants">
-              <img src="https://straight-code.github.io/assets/straight-code.png" alt="participant">
-              <button class="add-participant" style="color: #4067f9;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                  <path d="M12 5v14M5 12h14" />
-                </svg>
-              </button>
-            </div>
-            <div class="days-left" style="color: #4067f9;">
-              20 Days Left
+            <div class="container">
+            <div class='tiles'>
+              <div class='tiles_tile'>
+                <div class='tiles_tile__front'>
+                  <h1>
+                    <img src='https://straight-code.github.io/assets/straight-code.png'>
+                    1
+                  </h1>
+                  <p>Text here</p>
+                </div>
+                <div class='tiles_tile__back'>
+                  <div class='stats'>
+                    <h3>Orders</h3>
+                    <span>234</span>
+                    <h3>Failed</h3>
+                    <span class='red'>9 items</span>
+                    <h3>Successful</h3>
+                    <span class='green'>23 items</span>
+                  </div>
+                  <div class='info'>
+                    <h1>2</h1>
+                  </div>
+                  <div class='graphback'>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gback.png'>
+                  </div>
+                  <div class='graphmid'>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gmid.png'>
+                  </div>
+                  <div class='graphfront'>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gfront.png'>
+                  </div>
+                </div>
+                <div class='tiles_tile__left'></div>
+                <div class='tiles_tile__right'></div>
+                <div class='tiles_tile__top'></div>
+                <div class='tiles_tile__bottom'></div>
+              </div>
+              <div class='tiles_tile'>
+                <div class='tiles_tile__front'>
+                  <h1>
+                    <img src='https://straight-code.github.io/assets/straight-code.png'>
+                   2
+                  </h1>
+                  <p>Text here</p>
+                </div>
+                <div class='tiles_tile__back'>
+               
+                  <div class='info'>
+                    <h1>2</h1>
+                  </div>
+                  <div class='graphback'>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gback.png'>
+                  </div>
+                  <div class='graphmid'>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gmid.png'>
+                  </div>
+                  <div class='graphfront'>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gfront.png'>
+                  </div>
+                </div>
+                <div class='tiles_tile__left'></div>
+                <div class='tiles_tile__right'></div>
+                <div class='tiles_tile__top'></div>
+                <div class='tiles_tile__bottom'></div>
+              </div>
+              <div class='tiles_tile'>
+                <div class='tiles_tile__front'>
+                  <h1>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/dash.png'>
+                    3
+                  </h1>
+                  <p>Text here</p>
+                </div>
+                <div class='tiles_tile__back'>
+                 
+                  <div class='info'>
+                    <h1>3</h1>
+                  </div>
+                  <div class='graphback'>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gback.png'>
+                </div>
+                  <div class='graphfront'>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gfront.png'>
+                  </div>
+                </div>
+                <div class='tiles_tile__left'></div>
+                <div class='tiles_tile__right'></div>
+                <div class='tiles_tile__top'></div>
+                <div class='tiles_tile__bottom'></div>
+              </div>
+              <div class='tiles_tile'>
+                <div class='tiles_tile__front'>
+                  <h1>
+                    <img src='https://straight-code.github.io/assets/straight-code.png'>
+                    4
+                  </h1>
+                  <p>Text here</p>
+                </div>
+                <div class='tiles_tile__back'>
+                  
+                  <div class='info'>
+                    <h1>4</h1>
+                  </div>
+              
+                  <div class='graphmid'>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gmid.png'>
+                  </div>
+                  <div class='graphfront'>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gfront.png'>
+                  </div>
+                </div>
+                <div class='tiles_tile__left'></div>
+                <div class='tiles_tile__right'></div>
+                <div class='tiles_tile__top'></div>
+                <div class='tiles_tile__bottom'></div>
+              </div>
+              <div class='tiles_tile'>
+                <div class='tiles_tile__front'>
+                  <h1>
+                    <img src='https://straight-code.github.io/assets/straight-code.png'>
+                    5
+                  </h1>
+                  <p>Text here</p>
+                </div>
+                <div class='tiles_tile__back'>
+                 
+                  <div class='info'>
+                    <h1>5</h1>
+                  </div>
+                  <div class='graphback'>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gback.png'>
+                  </div>
+                
+                </div>
+                <div class='tiles_tile__left'></div>
+                <div class='tiles_tile__right'></div>
+                <div class='tiles_tile__top'></div>
+                <div class='tiles_tile__bottom'></div>
+              </div>
+              <div class='tiles_tile'>
+                <div class='tiles_tile__front'>
+                  <h1>
+                    <img src='https://straight-code.github.io/assets/straight-code.png'>
+                    6
+                  </h1>
+                  <p>Text here</p>
+                </div>
+                <div class='tiles_tile__back'>
+                 
+                  <div class='info'>
+                    <h1>6</h1>
+                  </div>
+                  <div class='graphback'>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gback.png'>
+                  </div>
+            
+                  <div class='graphfront'>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gfront.png'>
+                  </div>
+                </div>
+                <div class='tiles_tile__left'></div>
+                <div class='tiles_tile__right'></div>
+                <div class='tiles_tile__top'></div>
+                <div class='tiles_tile__bottom'></div>
+              </div>
+              <div class='tiles_tile'>
+                <div class='tiles_tile__front'>
+                  <h1>
+                    <img src='https://straight-code.github.io/assets/straight-code.png'>
+                    7
+                  </h1>
+                  <p>Text here</p>
+                </div>
+                <div class='tiles_tile__back'>
+                 
+                  <div class='info'>
+                    <h1>7</h1>
+                  </div>
+                  <div class='graphback'>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gback.png'>
+                  </div>
+                 
+                </div>
+                <div class='tiles_tile__left'></div>
+                <div class='tiles_tile__right'></div>
+                <div class='tiles_tile__top'></div>
+                <div class='tiles_tile__bottom'></div>
+              </div>
+              <div class='tiles_tile'>
+                <div class='tiles_tile__front'>
+                  <h1>
+                    <img src='https://straight-code.github.io/assets/straight-code.png'>
+                   8
+                  </h1>
+                  <p>Text here</p>
+                </div>
+                <div class='tiles_tile__back'>
+                
+                  <div class='info'>
+                    <h1>8</h1>
+                  </div>
+                
+                  <div class='graphmid'>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gmid.png'>
+                  </div>
+               
+                </div>
+                <div class='tiles_tile__left'></div>
+                <div class='tiles_tile__right'></div>
+                <div class='tiles_tile__top'></div>
+                <div class='tiles_tile__bottom'></div>
+              </div>
+              <div class='tiles_tile'>
+                <div class='tiles_tile__front'>
+                  <h1>
+                    <img src='https://straight-code.github.io/assets/straight-code.png'>
+                    9
+                  </h1>
+                  <p>Text here</p>
+                </div>
+                <div class='tiles_tile__back'>
+               
+                  <div class='info'>
+                    <h1>9</h1>
+                  </div>
+                  <div class='graphback'>
+                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gback.png'>
+                  </div>
+               
+                </div>
+                <div class='tiles_tile__left'></div>
+                <div class='tiles_tile__right'></div>
+                <div class='tiles_tile__top'></div>
+                <div class='tiles_tile__bottom'></div>
+              </div>
+             
             </div>
           </div>
         </div>
-      </div>
+        </div>
 
-      <div class="project-box-wrapper">
-        <div class="project-box" style="background-color: #e1ffd5;">
-          <div class="project-box-header">
-            <span></span>
-            <div class="more-wrapper">
-              <button class="project-btn-more">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
-                  <circle cx="12" cy="12" r="1" />
-                  <circle cx="12" cy="5" r="1" />
-                  <circle cx="12" cy="19" r="1" /></svg>
-              </button>
-        </div>
-      </div>
-      <div class="project-box-content-header">
-        <p class="box-content-header"></p>
-        <p class="box-content-subheader"><em></em></p>
-      </div>
-      <div class="box-progress-wrapper">
-        <p class="box-progress-header">Progress</p>
-        <div class="box-progress-bar">
-          <span class="box-progress" style="width: 70%; background-color: #4ff940"></span>
-        </div>
-        <p class="box-progress-percentage">70%</p>
-      </div>
-      <div class="project-box-footer">
-        <div class="participants">
-          <img src="https://straight-code.github.io/assets/straight-code.png" alt="participant">
-          <button class="add-participant" style="color: #4067f9;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-              <path d="M12 5v14M5 12h14" />
-            </svg>
-          </button>
-        </div>
-        <div class="days-left" style="color: #4067f9;">
-          20 Days Left
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="project-box-wrapper">
-    <div class="project-box" style="background-color: #e1ffd5;">
-      <div class="project-box-header">
-        <span></span>
-        <div class="more-wrapper">
-          <button class="project-btn-more">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
-              <circle cx="12" cy="12" r="1" />
-              <circle cx="12" cy="5" r="1" />
-              <circle cx="12" cy="19" r="1" /></svg>
-          </button>
-    </div>
-  </div>
-  <div class="project-box-content-header">
-    <p class="box-content-header"></p>
-    <p class="box-content-subheader"><em></em></p>
-  </div>
-  <div class="box-progress-wrapper">
-    <p class="box-progress-header">Progress</p>
-    <div class="box-progress-bar">
-      <span class="box-progress" style="width: 80%; background-color: #4ff940"></span>
-    </div>
-    <p class="box-progress-percentage">80%</p>
-  </div>
-  <div class="project-box-footer">
-    <div class="participants">
-      <img src="https://straight-code.github.io/assets/straight-code.png" alt="participant">
-      <button class="add-participant" style="color: #4067f9;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-          <path d="M12 5v14M5 12h14" />
-        </svg>
-      </button>
-    </div>
-    <div class="days-left" style="color: #4067f9;">
-      20 Days Left
-    </div>
-  </div>
-</div>
-</div>
 
     </div>
    </div>
