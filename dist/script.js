@@ -30,6 +30,11 @@ const Menu = props => {
     React.createElement("a", { href: "./admin/index.html", onClick: props.toggleMenu }, "ADMIN")), /*#__PURE__*/
 
 
+
+    React.createElement("li", null, /*#__PURE__*/
+    React.createElement("a", { href: "https://github.com/sponsors/straight-code", onClick: props.toggleMenu }, "SPONSORS")), /*#__PURE__*/
+
+
     
     React.createElement("li", null, /*#__PURE__*/
     React.createElement("a", { href: "#contact", onClick: props.toggleMenu }, "CONTACT"))), /*#__PURE__*/

@@ -60,7 +60,7 @@ const globals = {
     'featuredBoost' : 3.3,
     'featureChance' : 15,
     'paused' : true,
-    'gameLength' : 365,
+    'gameLength' : 730,
     'audio' : true,
     'auto' : false
 }
