@@ -27,7 +27,12 @@ const Menu = props => {
 
 
     React.createElement("li", null, /*#__PURE__*/
-    React.createElement("a", { href: "./admin/index.html", onClick: props.toggleMenu }, "ADMIN")), /*#__PURE__*/
+    React.createElement("a", { href: "./login/index.html", onClick: props.toggleMenu }, "LOGIN")), /*#__PURE__*/
+
+
+
+    React.createElement("li", null, /*#__PURE__*/
+    React.createElement("a", { href: "./admin/index.html", onClick: props.toggleMenu }, "DASHBOARD")), /*#__PURE__*/
 
 
 
@@ -95,7 +100,7 @@ const Header = props => {
 
 
     React.createElement("div", { className: "buttons" }, /*#__PURE__*/
-    React.createElement("a", { href: "#projects" }, "Portfolio"), /*#__PURE__*/
+    React.createElement("a", { href: "./admin/index.html" }, "View More"), /*#__PURE__*/
     React.createElement("a", { href: "#contact", className: "cta" }, "get in touch")))));
 
 
