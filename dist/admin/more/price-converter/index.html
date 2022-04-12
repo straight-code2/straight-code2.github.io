@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Price Converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+<link href="./assets/pc-logo.png" rel="shortcut icon" />
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="app loading">
+	
+	<div class="logo">
+	    <img src="./assets/pc-logo.png" alt="Logo" class="logo" />
+		<h1>Exchange</h1>
+	</div>
+	<div class="flex-box">
+		<select id="cryptoList">
+			<option selected disabled hidden value="0">Select a crypto</option>
+		</select>
+		<div class="fake-input">
+			<input id="myMoney" value="0">
+		</div>
+	</div>
+	<div class="flex-box">
+		<div class="icon"><img src="" id="cryptoIcon" alt=""></div>
+		<h3 style="color: #fff;">Price: <span id="cryptoPrice" style="color: #fff;"></span></h3>
+	</div>
+	<div class="flex-box">
+		<h4 style="color: #fff;">With <span id="showMoney" style="color: #fff;"></span> you can buy <span id="exchangeResult" style="color: #fff;"></span></h4>
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/autonumeric@4.5.4'></script><script  src="./script.js"></script>
+
+</body>
+</html>
